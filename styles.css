@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  background-color: #55557e;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  margin: 100px auto;
+  width: 500px;
+}
+
+.card-interface-header {
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.tab-items {
+  display: flex;
+  width: 100px;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-right: 0.1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.tab-items:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+.image:hover {
+    opacity: 0.8;
+}
+
+.tab-items:last-child {
+  border-right: none;
+}
+
+.image {
+  width: 3rem;
+  opacity: 0.5;
+}
+
+.active-tab {
+  border-right: none;
+  position: relative;
+  width: 120px;
+  height: 80px;
+  top: -8px;
+  z-index: 8;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.active {
+    opacity: 1;
+}
+
+.removed {
+  border-right: none;
+}
+
+.card-body {
+  margin-inline: auto;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.card-body-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0)),
+    url("./assets/img/food.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 180px;
+  border-radius: 0.2rem 0.2rem 0 0;
+}
+
+.head {
+  position: relative;
+  top: 10rem;
+  margin-left: 2rem;
+}
+
+.header-text {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.card-body-image {
+  width: 1.6rem;
+  margin-right: 0.2rem;
+  vertical-align: middle;
+}
+
+.location-text {
+  vertical-align: middle;
+}
+
+.list {
+    color: rgba(0, 0, 0, 0.5);
+    height: 250px;
+    padding: 0;
+    margin: 0;
+}
+
+.lists {
+    margin: 0;
+    padding-inline: 0;
+}
+
+.list-items {
+    padding: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.list-items:last-child {
+    border-bottom: none;
+}
+
+.lists.span {
+    transform: scale(2);
+}
